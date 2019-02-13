@@ -7,7 +7,7 @@ const questions = require('./data/questions.json')
 
 // Add your routes here - above the module.exports line
 router.get('/', function (req, res) {
-  res.render('vignette-0')
+  res.render('index')
 })
 router.get('/results', function (req, res) {
   res.render('results', jobs)
