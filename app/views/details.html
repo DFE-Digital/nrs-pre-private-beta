@@ -192,11 +192,11 @@ endblock %} {% block content %}
 
   if (index == null){
   } else{
-    Array.from(whatyoulllearn.children).map(i => {i.remove()})
-    Array.from(whatyoulldo.children).map(i => i.remove())
+    Array.from(whatyoulllearn.children).map(function(i) {i.remove()})
+    Array.from(whatyoulldo.children).map(function(i) {i.remove()})
 
   var titles = document.getElementsByClassName('title');
-  Array.from(titles).map(title => {
+  Array.from(titles).map(function(title) {
     title.innerText = data[index].name
   })
 
@@ -204,12 +204,12 @@ endblock %} {% block content %}
   title.innerText = data[index].description
 
   var salaries = document.getElementsByClassName('salary');
-  Array.from(salaries).map(salary => {
+  Array.from(salaries).map(function(salary) {
     salary.innerText = data[index].salary
   })
 
   var traineeSalaries = document.getElementsByClassName('traineeSalary');
-  Array.from(traineeSalaries).map(traineeSalary => {
+  Array.from(traineeSalaries).map(function(traineeSalary) {
     traineeSalary.innerText = data[index].traineeSalary
   })
 
@@ -247,21 +247,21 @@ endblock %} {% block content %}
   // trainingor.innerText = data[index].trainingor
 
   // var youllneed = document.getElementById('youllneed');
-  // data[index].youllneed.map(learning => {
+  // data[index].youllneed.map(function(learning) {
   //   let list = document.createElement('li');
   //   list.innerText = learning
   //   youllneed.append(list)
   // })
 
   // var courses = document.getElementById('courses');
-  // data[index].courses.map(course => {
+  // data[index].courses.map(function(course) {
   //   let list = document.createElement('li');
   //   list.innerText = course
   //   courses.append(list)
   // })
 
   // var coulddothisdetails = document.getElementById('coulddothisdetails');
-  // data[index].coulddothisdetails.map(detail => {
+  // data[index].coulddothisdetails.map(function(detail) {
   //   let list = document.createElement('li');
   //   list.innerText = detail
   //   coulddothisdetails.append(list)
@@ -269,12 +269,12 @@ endblock %} {% block content %}
 
 
 
-  data[index].whatyoulldo.map(task => {
+  data[index].whatyoulldo.map(function(task) {
     let list = document.createElement('li');
     list.innerText = task
     whatyoulldo.append(list)
   })
-  data[index].whatyoulllearn.map(learning => {
+  data[index].whatyoulllearn.map(function(learning) {
     let list = document.createElement('li');
     list.innerText = learning
     whatyoulllearn.append(list)
