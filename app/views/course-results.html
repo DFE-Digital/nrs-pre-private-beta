@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="./step-by-step-2">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Course results</li>
+    </ol>
+  </div>
+
+  <main id="main" class="govuk-main-wrapper" role="main">
+
+    <div class="govuk-grid-row govuk-!-margin-top-6">
+      <!-- <div class="govuk-grid-column-one-quarter govuk-!-margin-bottom-9">
+        <h1 class="govuk-heading-m">Sort by</h1>
+        <fieldset class="govuk-fieldset">
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                Recommended
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                Hours (Low to high)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                Salary (High to Low)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                Distance (Near to far)
+              </label>
+            </div>
+
+          </div>
+        </fieldset>
+      </div> -->
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Choose a course near you</h1>
+
+        {% for course in courses %}
+
+        <article class="govuk-!-margin-bottom-9">
+          <h2  class="govuk-heading-l">
+            <a onclick="save({{loop.index}}, 'course')" href="./course-detail">{{- course.name | safe }}</a>
+          </h2>
+          <p class="govuk-body">{{- course.description | safe }}</p>
+          <ul class="govuk-list">
+            <li>{{- course.college | safe }}
+            </li>
+            <li>{{- course.distance | safe }}&nbsp;from your location
+            </li>
+            <li>
+              {{- course.price | safe }}
+            </li>
+          </ul>
+        </article>
+
+        {%- endfor %}
+
+        <!-- <a href="#" class="govuk-link">View more courses</a> -->
+
+      </div>
+      <div class="govuk-grid-column-one-third">
+          <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4"></div>
+          <h2 class="govuk-heading-m">Save your progress</h2>
+          <ul class="govuk-list">
+            <li>
+              <p>
+                <a href="./vignette-save">Save your progress</a>
+              </p>
+            </li>
+          </ul>
+          <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-top-9 govuk-!-margin-bottom-4">
+
+          </div>
+          <h2 class="govuk-heading-m">Get more advice and guidance</h2>
+          <ul class="govuk-list">
+            <li>
+              <p>
+                <a href="./vignette-career">Speak to a careers adviser</a>
+              </p>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+  </main>
+</div>
+{% endblock %}

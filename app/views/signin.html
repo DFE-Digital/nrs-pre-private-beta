@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="./step-by-step-1.html">Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Quiz</a>
+      </li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Create an account</h1>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="name">
+            Email address
+          </label>
+          <input class="govuk-input" id="name" name="name" type="text">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" >
+            Password
+          </label>
+          <input class="govuk-input" id="name" name="name" type="password">
+        </div>
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+          <h2 class="govuk-fieldset__heading">
+            What is your postcode?
+          </h2>
+        </legend>
+        <p class="govuk-body">
+          We'll use this to show you courses and jobs in your area.
+        </p>
+        
+
+        <a href="./email-0" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8">
+          Create account
+        </a>
+
+
+      </div>
+
+    </div>
+  </main>
+</div>
+{% endblock %}

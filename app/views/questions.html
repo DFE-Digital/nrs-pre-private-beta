@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="./step-by-step-2">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Course results</li>
+    </ol>
+  </div>
+
+  <main id="main" class="govuk-main-wrapper" role="main">
+    <h1 class="govuk-heading-xl">That&rsquo;s it, you&rsquo;ve finished all 40 questions</h1>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body">
+          <a href="../results" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-4">
+            Continue to results
+          </a>
+        </p>
+        <p class="govuk-body">
+          <a href="../vignette-1a" role="button" draggable="false" style="background:#fff; border:#10813E 2px solid; color:#10813E;" class="govuk-button govuk-!-margin-bottom-8">
+            Save your progress
+          </a>
+        </p>
+      </div>
+    </div>
+    <!-- <div class="govuk-grid-row govuk-!-margin-top-6">
+
+      <div class="govuk-grid-column-three-quarters">
+
+        {% for question in questions %}
+
+        <article class="govuk-!-margin-bottom-9">
+          <h3 class="govuk-heading-m">{{- question.question | safe }}</h3>
+
+        </article>
+        {%- endfor %}
+        <p class="govuk-body"><a href="./vignette-1a" class="">Save your progress</a></p>
+        <p class="govuk-body"><a href="./vignette-1a" class="">Skip to results</a></p>
+      </div>
+    </div> -->
+
+  </main>
+</div>
+{% endblock %}

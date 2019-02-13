@@ -1,0 +1,233 @@
+{% extends "layout.html" %} {% block pageTitle %} GOV.UK Prototype Kit {%
+endblock %} {% block content %}
+<main id="main" class="govuk-main-wrapper" role="main">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <a href="../details" class="govuk-back-link">Back</a>
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-3 govuk-!-margin-top-6">
+        There are 300 <span class="title" style="text-transform:lowercase;"></span> jobs near you:
+      </h1>
+
+    </div>
+  </div>
+
+
+  <!-- <div class="govuk-grid-row govuk-!-margin-bottom-6">
+    <div class="govuk-grid-column-one-third">
+      <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-quarter govuk-!-margin-top-9 govuk-!-margin-bottom-6">
+                <span style="width:55px; height: 55px; background-color:red;background:url('./public/images/pound.svg'); background-position: center; background-size:cover; display: flex;"></span>
+              </div>
+              <div class="govuk-grid-column-three-quarters">
+                <h4 class="govuk-heading-s govuk-!-margin-top-5">Salary</h4>
+                <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-3">
+
+                <ul class="govuk-list">
+                  <li>
+                    £<span id="salary">25000</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-quarter govuk-!-margin-top-9 govuk-!-margin-bottom-6">
+          <span style="width:55px; height: 55px; background-color:red;background:url('./public/images/time.svg'); background-position: center; background-size:cover; display: flex;"></span>
+        </div>
+        <div class="govuk-grid-column-three-quarters">
+          <h4 class="govuk-heading-s govuk-!-margin-top-5">Typical hours</h4>
+          <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-3" />
+          <p class="govuk-body"><span id="hours">{# content in jobs.json #}</span> a week</p>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-quarter govuk-!-margin-top-9 govuk-!-margin-bottom-6">
+          <span style="width:55px; height: 55px; background-color:red;background:url('./public/images/cal.svg'); background-position: center; background-size:cover; display: flex;"></span>
+        </div>
+        <div class="govuk-grid-column-three-quarters">
+          <h4 class="govuk-heading-s govuk-!-margin-top-5">You could work</h4>
+          <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-3" />
+          <p id="lifestyle" class="govuk-body">{# content in jobs.json #}</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="govuk-!-margin-bottom-6 govuk-!-margin-top-6 ">
+    <h3 style="margin-top:0px;" class="govuk-heading-l govuk-!-margin-top-4">
+      Examples
+    </h3>
+    <div class="govuk-grid-row govuk-!-margin-bottom-4 govuk-!-margin-top-6">
+      <div class="govuk-grid-column-one-third">
+        <h4 class="govuk-heading-s">Team leader £22,000</h4>
+        <p>A motivated person needed to run a small team.</p>
+        <p class="govuk-body">1.6 miles from your location</p>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <h4 class="govuk-heading-s">Junior manager £19,500</h4>
+        <p>Help us in our new business.</p>
+        <p class="govuk-body">3 miles from your location</p>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <h4 class="govuk-heading-s">Co-ordinator £21,600</h4>
+        <p>Established company is growing and needs 3 new staff.</p>
+        <p class="govuk-body">4 miles from your location</p>
+      </div>
+    </div>
+  </div>
+<!--
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <h2 class="govuk-heading-m">What you need to do</h2>
+          <p id="trainingor" class="govuk-body">
+          </p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li id="waytotrain1"></li>
+          </ul>
+          <p><strong><span id="andor"></span></strong></p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li id="waytotrain2"></li>
+          </ul>
+
+          <h2 class="govuk-heading-m">
+            Learn while you work
+          </h2>
+          <p id="coulddothis" class="govuk-body"></p>
+          <ul id="coulddothisdetails" class="govuk-list govuk-list--bullet">
+
+          </ul>
+        </div>
+      </div>
+      <div class="govuk-grid-row" style="margin-top: 20px;">
+        <div class="govuk-grid-column-full">
+          <h2 class="govuk-heading-m">
+            To be <span style="text-transform:lowercase;" class="title"></span> you need:
+          </h2>
+          <ul class="govuk-list govuk-list--bullet" id="youllneed">
+
+          </ul>
+          <h2 class="govuk-heading-m">What you’ll do</h2>
+          <ul id="whatyoulldo" class="govuk-list govuk-list--bullet">
+
+          </ul>
+          <h3 class="govuk-heading-m">As a trainee you’ll learn:</h3>
+          <ul id="whatyoulllearn" class="govuk-list govuk-list--bullet">
+
+          </ul>
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+          <span class="govuk-caption-m govuk-!-margin-top-9">Did you know?</span>
+
+        </div>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+
+    </div>
+  </div> -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <a href="../details" class="govuk-back-link">Back</a>
+    </div>
+  </div>
+</main>
+<script type="text/javascript">
+  // Load all content
+
+  // get data from nunjucks
+  var data = {{ data | dump | safe }};
+
+  // get chosen job from localStorage
+  var index = JSON.parse(localStorage.getItem('user'));
+
+  var titles = document.getElementsByClassName('title');
+  Array.from(titles).map(title => {
+    title.innerText = data[index].name
+  })
+
+  var title = document.getElementById('description');
+  title.innerText = data[index].description
+
+  var salaries = document.getElementsByClassName('salary');
+  Array.from(salaries).map(salary => {
+    salary.innerText = data[index].salary
+  })
+
+  var traineeSalaries = document.getElementsByClassName('traineeSalary');
+  Array.from(traineeSalaries).map(traineeSalary => {
+    traineeSalary.innerText = data[index].traineeSalary
+  })
+
+  // var hours = document.getElementById('hours');
+  // hours.innerText = data[index].hours
+  //
+  // var salary = document.getElementById('salary');
+  // salary.innerText = data[index].salary
+
+  var anora = document.getElementById('anora');
+  anora.innerText = data[index].anora
+
+  var coursedetail = document.getElementById('coursedetail');
+  coursedetail.innerText = data[index].coursedetail
+
+  // var lifestyle = document.getElementById('lifestyle');
+  // lifestyle.innerText = data[index].lifestyle
+
+  // var waytotrain1 = document.getElementById('waytotrain1');
+  // waytotrain1.innerText = data[index].waytotrain1
+
+  // var andor = document.getElementById('andor');
+  // andor.innerText = data[index].andor
+
+  // var waytotrain2 = document.getElementById('waytotrain2');
+  // waytotrain2.innerText = data[index].waytotrain2
+
+  // var coulddothis = document.getElementById('coulddothis');
+  // coulddothis.innerText = data[index].coulddothis
+
+  // var trainingor = document.getElementById('trainingor');
+  // trainingor.innerText = data[index].trainingor
+
+  // var youllneed = document.getElementById('youllneed');
+  // data[index].youllneed.map(learning => {
+  //   let list = document.createElement('li');
+  //   list.innerText = learning
+  //   youllneed.append(list)
+  // })
+
+  var courses = document.getElementById('courses');
+  data[index].courses.map(course => {
+    let list = document.createElement('li');
+    list.innerText = course
+    courses.append(list)
+  })
+
+  // var coulddothisdetails = document.getElementById('coulddothisdetails');
+  // data[index].coulddothisdetails.map(detail => {
+  //   let list = document.createElement('li');
+  //   list.innerText = detail
+  //   coulddothisdetails.append(list)
+  // })
+
+  // var whatyoulldo = document.getElementById('whatyoulldo');
+  // data[index].whatyoulldo.map(task => {
+  //   let list = document.createElement('li');
+  //   list.innerText = task
+  //   whatyoulldo.append(list)
+  // })
+  //
+  // var whatyoulllearn = document.getElementById('whatyoulllearn');
+  // data[index].whatyoulllearn.map(learning => {
+  //   let list = document.createElement('li');
+  //   list.innerText = learning
+  //   whatyoulllearn.append(list)
+  // })
+</script>
+{% endblock %}

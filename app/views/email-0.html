@@ -1,0 +1,100 @@
+<head>
+  <link rel="stylesheet" href="./public/stylesheets/application.css">
+  <style media="screen">
+    .vignette{
+      background:white; padding:2em; border: 4px solid blue;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body style=" height:100vh; width:100vw; background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));">
+  <div  class="govuk-width-container govuk-!-margin-top-9">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="vignette">
+          <p style=" font-size:24px; ">
+            You need to now imagine you have received an email from the Department for Education
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="govuk-grid-row govuk-!-margin-top-9">
+      <div style="background: white;" class="govuk-grid-column-three-quarters">
+        <table class="govuk-table">
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">From:</th>
+              <td class="govuk-table__cell">help_to_retrain@education.gov.uk</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">To:</th>
+              <td class="govuk-table__cell">your_name@email.co.uk</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">Subject</th>
+              <td class="govuk-table__cell">Welcome to Get help to retrain</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="govuk-body">
+          Hello and welcome,
+        </p>
+        <p class="govuk-body">
+          Thanks for signing up to the service. You now have your own account.
+        </p>
+        <p class="govuk-body">
+          You will have seen a list of possible new jobs you could do, based on your skills and interests. You also need to do some training in <strong>Communications Level 3</strong> to get these jobs and we are here to help you.
+        </p>
+        <p class="govuk-body">
+          <a href="./step-by-step-2" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+            Access my account
+          </a>
+        </p>
+        <h3 class="govuk-heading-m">How we will help you</h3>
+        <p class="govuk-body">
+          We will be in touch regularly by email to give you advice on the different stages of the service as you do your training and get a new job. You can also access your own account to see:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>your step by step checklist</li>
+          <li>what you need to do next</li>
+          <li>jobs that you can apply for</li>
+        </ul>
+        <div class="govuk-inset-text">
+          You can <a href="./vignette-career">contact an adviser</a> at any point to get help with retraining, job search or general advice.
+        </div>
+        <h3 class="govuk-heading-m">What you need to do now
+        </h3>
+        <p class="govuk-body">
+          Access your account and look for the <strong>Communications Level 3 training course that suits you best. We’ve given you a list of some courses that are local to you.
+        </p>
+        <p class="govuk-body">
+          Thanks,<br>Camilla,<br> Retraining Manager.
+        </p>
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+        <span class="govuk-caption-m govuk-!-margin-top-9">Did you know?</span>
+        <h3 style="margin-top:0px;" class="govuk-heading-m">
+          These jobs are available in your area.
+        </h3>
+        <div class="govuk-grid-row govuk-!-margin-bottom-9">
+          <div class="govuk-grid-column-one-third">
+            <h4 class="govuk-heading-s">Team leader £22,000</h4>
+            <p>A motivated person needed to run a small team.</p>
+          </div>
+          <div class="govuk-grid-column-one-third">
+            <h4 class="govuk-heading-s">Junior manager £19,500</h4>
+            <p>Help us in our new business.</p>
+          </div>
+          <div class="govuk-grid-column-one-third">
+            <h4 class="govuk-heading-s">Co-ordinator £21,600</h4>
+            <p>Established company is growing and needs 3 new staff.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div >
+  </div>
+{% include "includes/scripts.html" %}
+</body>

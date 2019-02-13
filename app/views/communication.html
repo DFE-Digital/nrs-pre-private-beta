@@ -1,0 +1,76 @@
+{% extends "layout.html" %} {% block pageTitle %} GOV.UK Prototype Kit {%
+endblock %} {% block content %}
+<main id="main" class="govuk-main-wrapper" role="main">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <a href="../step-by-step-2" class="govuk-back-link">Back to results</a>
+    </div>
+  </div>
+
+
+  <div class="govuk-grid-row govuk-!-margin-top-6">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <h1 class="govuk-heading-xl govuk-!-margin-bottom-6 govuk-!-margin-top-6">
+            Find a communications course
+          </h1>
+          <p class="govuk-body">
+            To be a <span class="title" style="text-transform: lowercase;">healthcare assistant</span> you also need good communication skills.  This course will help you understand:
+          </p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>effective communication</li>
+            <li>the variety of ways that people communicate</li>
+            <li>the barriers that may exist</li>
+            <li>ways to overcome these barriers</li>
+          </ul>
+          <p class="govuk-body">
+            The course will give you the opportunity to develop the interpersonal skills you need to embark on a new career as a <span class="title" style="text-transform: lowercase;">healthcare assistant</span>.
+          </p>
+          <a href="./course-results" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
+            Start now
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4"></div>
+      <h2 class="govuk-heading-m">Save your progress</h2>
+      <ul class="govuk-list">
+        <li>
+          <p>
+            <a href="./vignette-save">Save your progress</a>
+          </p>
+        </li>
+      </ul>
+      <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-top-9 govuk-!-margin-bottom-4">
+
+      </div>
+      <h2 class="govuk-heading-m">Get more advice and guidance</h2>
+      <ul class="govuk-list">
+        <li>
+          <p>
+            <a href="./vignette-career">Speak to a careers adviser</a>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="govuk-grid-column-full">
+      <a href="../step-by-step-2" class="govuk-back-link">Back to results</a>
+    </div>
+</main>
+
+<script type="text/javascript">
+  // get data from nunjucks
+  var data = {{ data | dump | safe }};
+
+  // get chosen job from localStorage
+  var index = JSON.parse(localStorage.getItem('user'));
+
+  var titles = document.getElementsByClassName('title');
+  Array.from(titles).map(title => {
+    title.innerText = data[index].name
+  })
+
+</script>
+{% endblock %}

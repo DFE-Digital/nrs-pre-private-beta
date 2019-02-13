@@ -1,0 +1,44 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+    padding: 0;
+    margin: 0;
+    font-size:19px;
+    font-family: sans-serif;
+  }
+  .button{
+    background-color: blue; /* Green */
+    border: none;
+    color: white !important;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .vignette{
+    background:white; padding:2em; border: 4px solid blue;  max-width:550px; text-align: center; margin: 0 auto;
+  }
+  .wrapper{
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    position: fixed;
+     z-index:3000;
+     background:white;
+   }
+</style>
+<div id="vignette" class="wrapper" >
+  <div style="position: fixed; height: 100vh; width: 100vw; display: flex; justify-content: center; flex-direction: column;">
+    <div class="vignette">
+      <h2>
+        You have contacted one of our advisers and they have solved your problem.
+      </h2>
+      <a class="button" onClick="window.history.back()" href="#">Go back</a>
+    </div>
+  </div>
+  <div style=" height:100vh; width:100vw; background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));"></div>{% include "includes/scripts.html" %}</div>{% include "includes/scripts.html" %}
+  </div>
+</div>

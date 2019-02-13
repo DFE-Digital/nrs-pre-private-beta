@@ -1,0 +1,52 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        Home
+      </li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Get help to retrain</h1>
+
+        <p class="govuk-body">Use this service to:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>understand what you’re good at</li>
+          <li>see the jobs you could do</li>
+          <li>find out how to get training to do these jobs</li>
+          <li>find and apply for jobs</li>
+        </ul>
+
+        <a href="./step-by-step-1" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
+          Start now
+        </a>
+
+        <!-- <h2 class="govuk-heading-m">Before you start</h2>
+
+        <p class="govuk-body">You can also
+          <a class="govuk-link" href="#">register by post</a>.</p>
+
+        <p class="govuk-body">The online service is also available in
+          <a class="govuk-link" href="#">Welsh (Cymraeg)</a>.</p> -->
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

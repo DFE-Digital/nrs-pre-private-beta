@@ -1,0 +1,439 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+  <link rel="stylesheet" href="/public/stylesheets/application.css">
+  {% include "includes/provider-style.html" %}
+  <style media="screen">
+    body{
+      margin-top: 70px;
+    }
+    header.mobile, nav, header{
+      display: none !important;
+    }
+    .banner{
+      position: fixed;
+      top:0;
+      padding-top:22.5px;
+      width: 100%;
+      background-color: white;
+      z-index: 100000;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="font-family: san-serif !important;">
+  <div class="banner">
+    <div class="govuk-width-container">
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-quarter">
+          <img class="govuk-!-margin-3" width="70px" src="./public/images/Department_for_Education.png" alt="Department for Education">
+        </div>
+        <div class="govuk-grid-column-one-half">
+          <h3 style="margin-bottom:0" class="govuk-heading-m">Get more advice and guidance</h3>
+          <p class="govuk-body"><a onClick="window.history.back()" href="#">Go back</a></p>
+        </div>
+        <div class="govuk-grid-column-one-quarter">
+          <a href="./vignette-career" class="govuk-button" role="button">Speak to an adviser</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--tag man text-->
+  <div class="container light-blue">
+    <header class="mobile show-in-tablet">
+      <div class="menu" onclick=" void(0); "></div>
+      <div class="logo">
+        <a href="./vignette-2a">
+          <img src="/public/images/citycollege.png" alt="Your City College"></a>
+      </div>
+      <div class="search" onclick=" void(0); "></div>
+    </header>
+
+    <nav class="main hide-in-tablet">
+      <div class="row">
+        <div class="span12">
+          <ul>
+            <li><a href="./vignette-2a">Home</a></li>
+            <li><a href="./vignette-2a">The College</a>
+              <div class="row subnav">
+                <div class="span4 description">
+                  <h1>The College</h1>
+                  <p>All about us.</p>
+                </div>
+                <div class="span8 links">
+                  <ul>
+                    <li><a href="./vignette-2a">About us</a></li>
+                    <li><a href="./vignette-2a">College Vision, Mission &amp; Values</a></li>
+                    <li><a href="./vignette-2a">British Values</a></li>
+                    <li><a href="./vignette-2a">Safeguarding &amp; Prevent</a></li>
+                    <li><a href="./vignette-2a">Equality &amp; Diversity</a></li>
+                    <li><a href="./vignette-2a">Facts &amp; Statistics</a></li>
+                    <li><a href="./vignette-2a">National 16 to 18 performance tables</a></li>
+                    <li><a href="./vignette-2a">Corporate Documents</a></li>
+                    <li><a href="./vignette-2a">College Campuses &amp; Centres</a></li>
+                    <li><a href="./vignette-2a">College term dates for 2017/ 18</a></li>
+                    <li><a href="./vignette-2a">College term dates 2018/ 19</a></li>
+                    <li><a href="./vignette-2a">Keighley College term dates 2018/ 19</a></li>
+                    <li><a href="./vignette-2a">Knowledge Bank</a></li>
+                    <li><a href="./vignette-2a">Governance</a></li>
+                    <li><a href="./vignette-2a">Engagement</a></li>
+                    <li><a href="./vignette-2a">School Liaison Team</a></li>
+                    <li><a href="./vignette-2a">Jobs and Careers</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class=" active"><a href="./vignette-2a">Courses &amp; Apprenticeships</a>
+              <div class="row subnav">
+                <div class="span4 description">
+                  <h1>Courses &amp; Apprenticeships</h1>
+                  <p>What&#39;s on offer.</p>
+                </div>
+                <div class="span8 links">
+                  <ul>
+                    <li><a href="./vignette-2a">Courses</a></li>
+                    <li><a href="./vignette-2a">Your Sixth Form</a></li>
+                    <li><a href="./vignette-2a">Prospectuses</a></li>
+                    <li><a href="./vignette-2a">Traineeships</a></li>
+                    <li><a href="./vignette-2a">Apprenticeships</a></li>
+                    <li><a href="./vignette-2a">How to Apply</a></li>
+                    <li><a href="./vignette-2a">University Centre</a></li>
+                    <li class="active"><a href="./vignette-2a">Adult &amp; Part Time Courses</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li><a href="./vignette-2a">Employers</a>
+              <div class="row subnav">
+                <div class="span4 description">
+                  <h1>Employers</h1>
+                  <p>Working with your business.</p>
+                </div>
+                <div class="span8 links">
+                  <ul>
+                    <li><a href="./vignette-2a">Apprenticeships For Your Business</a></li>
+                    <li><a href="./vignette-2a">Apprenticeship Reforms</a></li>
+                    <li><a href="./vignette-2a">Staff Training</a></li>
+                    <li><a href="./vignette-2a">Blog</a></li>
+                    <li><a href="./vignette-2a">Our Partners</a></li>
+                    <li><a href="./vignette-2a">ESIF Funding Partners</a></li>
+                    <li><a href="./vignette-2a">Documents</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li><a href="./vignette-2a">Student Life</a>
+              <div class="row subnav">
+                <div class="span4 description">
+                  <h1>Student Life</h1>
+                  <p>Enjoying College.</p>
+                </div>
+                <div class="span8 links">
+                  <ul>
+                    <li><a href="./vignette-2a">Student Support</a></li>
+                    <li><a href="./vignette-2a">Life in Your</a></li>
+                    <li><a href="./vignette-2a">Fees &amp; Finance</a></li>
+                    <li><a href="./vignette-2a">Students&#39; Union</a></li>
+                    <li><a href="./vignette-2a">Sports Academy</a></li>
+                    <li><a href="./vignette-2a">European Projects</a></li>
+                    <li><a href="./vignette-2a">Get Active!</a></li>
+                    <li><a href="./vignette-2a">Learning Support</a></li>
+                    <li><a href="./vignette-2a">Careers </a></li>
+                    <li><a href="./vignette-2a">Competition T&amp;C</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li><a href="./vignette-2a">What&#39;s Happening</a>
+              <div class="row subnav">
+                <div class="span4 description">
+                  <h1>What&#39;s Happening</h1>
+                  <p></p>
+                </div>
+                <div class="span8 links">
+                  <ul>
+                    <li><a href="./vignette-2a">Events</a></li>
+                    <li><a href="./vignette-2a">News</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li><a href="./vignette-2a">Contact</a></li>
+            <li class="icon-basket"><a href="./vignette-2a">Store</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="blackout" id="blackout">
+      <nav class="mobile" id="mobile-menu">
+        <div class="logo"><a href="./vignette-2a"><img src="/public/images/citycollege.png" alt="Your City College"></a></div>
+        <ul>
+          <li><a href="./vignette-2a">Home</a></li>
+          <li><a href="./vignette-2a" class=" sub">The College</a>
+            <div class="subnav">
+              <ul>
+                <li><a href="./vignette-2a">About us</a></li>
+                <li><a href="./vignette-2a">College Vision, Mission &amp; Values</a></li>
+                <li><a href="./vignette-2a">British Values</a></li>
+                <li><a href="./vignette-2a">Safeguarding &amp; Prevent</a></li>
+                <li><a href="./vignette-2a">Equality &amp; Diversity</a></li>
+                <li><a href="./vignette-2a">Facts &amp; Statistics</a></li>
+                <li><a href="./vignette-2a">National 16 to 18 performance tables</a></li>
+                <li><a href="./vignette-2a">Corporate Documents</a></li>
+                <li><a href="./vignette-2a">College Campuses &amp; Centres</a></li>
+                <li><a href="./vignette-2a">College term dates for 2017/ 18</a></li>
+                <li><a href="./vignette-2a">College term dates 2018/ 19</a></li>
+                <li><a href="./vignette-2a">Keighley College term dates 2018/ 19</a></li>
+                <li><a href="./vignette-2a">Knowledge Bank</a></li>
+                <li><a href="./vignette-2a">Governance</a></li>
+                <li><a href="./vignette-2a">Engagement</a></li>
+                <li><a href="./vignette-2a">School Liaison Team</a></li>
+                <li><a href="./vignette-2a">Jobs and Careers</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./vignette-2a" class=" active sub">Courses &amp; Apprenticeships</a>
+            <div class="subnav">
+              <ul>
+                <li><a href="./vignette-2a">Courses</a></li>
+                <li><a href="./vignette-2a">Your Sixth Form</a></li>
+                <li><a href="./vignette-2a">Prospectuses</a></li>
+                <li><a href="./vignette-2a">Traineeships</a></li>
+                <li><a href="./vignette-2a">Apprenticeships</a></li>
+                <li><a href="./vignette-2a">How to Apply</a></li>
+                <li><a href="./vignette-2a">University Centre</a></li>
+                <li><a href="./vignette-2a" class="active">Adult &amp; Part Time Courses</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./vignette-2a" class=" sub">Employers</a>
+            <div class="subnav">
+              <ul>
+                <li><a href="./vignette-2a">Apprenticeships For Your Business</a></li>
+                <li><a href="./vignette-2a">Apprenticeship Reforms</a></li>
+                <li><a href="./vignette-2a">Staff Training</a></li>
+                <li><a href="./vignette-2a">Blog</a></li>
+                <li><a href="./vignette-2a">Our Partners</a></li>
+                <li><a href="./vignette-2a">ESIF Funding Partners</a></li>
+                <li><a href="./vignette-2a">Documents</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./vignette-2a" class=" sub">Student Life</a>
+            <div class="subnav">
+              <ul>
+                <li><a href="./vignette-2a">Student Support</a></li>
+                <li><a href="./vignette-2a">Life in Your</a></li>
+                <li><a href="./vignette-2a">Fees &amp; Finance</a></li>
+                <li><a href="./vignette-2a">Students&#39; Union</a></li>
+                <li><a href="./vignette-2a">Sports Academy</a></li>
+                <li><a href="./vignette-2a">European Projects</a></li>
+                <li><a href="./vignette-2a">Get Active!</a></li>
+                <li><a href="./vignette-2a">Learning Support</a></li>
+                <li><a href="./vignette-2a">Careers </a></li>
+                <li><a href="./vignette-2a">Competition T&amp;C</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./vignette-2a" class=" sub">What&#39;s Happening</a>
+            <div class="subnav">
+              <ul>
+                <li><a href="./vignette-2a">Events</a></li>
+                <li><a href="./vignette-2a">News</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./vignette-2a">Contact</a></li>
+          <li><a href="./vignette-2a" class="icon-basket">Store</a></li>
+
+          <li><a href="./vignette-2a" target="_self">Portal</a></li>
+        </ul>
+      </nav>
+
+
+      <div class="close"></div>
+    </div>
+    <section class="search-form" style="display: none;">
+      <div class="row">
+        <div class="span12">
+          <div class="form">
+            <form action="/search/" method="GET">
+              <input type="search" id="q" name="q" placeholder="Search..." />
+              <button type="submit" class="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="large-image">
+      <div class="image" style="background-image:url('/public/images/community_header.jpg')"></div>
+
+
+      <div class="page-intro left align-left higher-ed">
+
+        <div style="height: 100%; display: flex; flex-direction: column; justify-content:center">
+          <div>
+            <h1 class="title">Functional Skills Maths for Adults</h1>
+
+
+
+            <a href="#more" class="button higher-ed">Find out more </a>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="logo-header navpadding hide-in-tablet">
+        <div class="row">
+          <div class="span6 logo">
+            <a href="./vignette-2a">
+              <img src="/public/images/citycollege.png" alt="Logo" width="130"></a>
+          </div>
+          <div class="span6 tel">
+            <span>&nbsp;<a href="./vignette-2a">0123 456 7890</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="more" class="imagepadding">
+
+      <div class="govuk-width-container content-page rich-text">
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds  govuk-!-margin-bottom-6">
+            <div class="span8">
+              <h2 style="font-size:28px;"><span class="title">Functional Skills Maths for Adults</span> course for adults</h2>
+            </div>
+            <div class="span8">
+              <p style="font-size:20px;">Effective communication is possibly the one of the most important skills we can learn. The better we are at communicating, the more successful we are at life. This course has been designed to help people learn
+                what it means to be an effective communicator, to help them develop their speaking skills and to help them improve their interpersonal skills.</p>
+              <p style="font-size:16px;">The course in made up of six units. These insightful modules have been designed to clearly explain the important aspects of communication and help students to apply these skills in everyday situations. From
+                communicating by telephone and online, to writing efficiently and listening effectively, this communications skills course will help students master the art of communication.</p>
+            </div>
+          </div>
+        </div>
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third govuk-!-margin-bottom-9">
+            <h3>Online in your own time</h3>
+            <ul>
+              <li>Cost £50</li>
+              <li>Fully flexible</li>
+              <li>Course content online</li>
+              <li>Tutor support by email</li>
+              <li>Start date: Anytime</li>
+            </ul>
+            <a href="./email-1"><strong>Apply</strong></a><br><br>
+            <a href="./vignette-2a">Get more information</a>
+          </div>
+          <div class="govuk-grid-column-one-third govuk-!-margin-bottom-9">
+            <h3>Part time</h3>
+            <ul>
+              <li>Cost £100</li>
+              <li>Flexible over 10 weeks</li>
+              <li>Online classes with a tutor</li>
+              <li>College classes for 4 half days</li>
+              <li>Start date: 1st of every month</li>
+            </ul>
+            <a href="./email-1"><strong>Apply</strong></a><br><br>
+            <a href="./vignette-2a">Get more information</a>
+          </div>
+          <div class="govuk-grid-column-one-third govuk-!-margin-bottom-9">
+            <h3>Full time</h3>
+            <ul>
+              <li>Cost £250</li>
+              <li>Intensive over 7 days</li>
+              <li>Online classes with a tutor </li>
+              <li>College classes for 3 days</li>
+              <li>Start date: September 2019</li>
+            </ul>
+            <a href="./email-1"><strong>Apply</strong></a><br><br>
+            <a href="./vignette-2a">Get more information</a>
+          </div>
+        </div>
+      </div>
+
+      <section class="content-page rich-text">
+        <div class="row">
+
+        </div>
+        <div style="display: flex;" class="row page-content-header">
+
+          <div style=" margin: 0 2em 0 0">
+
+          </div>
+          <div style=" margin: 0 2em 0 0" class="">
+
+          </div>
+          <div style=" margin: 0 2em 0 0" class="">
+
+          </div>
+        </div>
+
+      </section>
+
+
+    </section>
+
+
+
+    <footer>
+
+
+      <section class="light-blue">
+        <div class="row equal-height-group">
+
+
+        </div>
+      </section>
+      <section class="dark-blue">
+        <div class="row">
+          <div class="span2 logo">
+            <img src="/public/images/citycollege.png" alt="Your City College">
+          </div>
+          <div class="span10 links">
+            <span class="copyright">&copy; 2019 Your City College</span>
+
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
+  <!--[if lt IE 9]>
+	<script type="text/javascript" src="/common/vendor/pie/PIE.js"></script>
+	<script type="text/javascript" >$(function() { if (window.PIE) { $('.page-intro').each(function() { PIE.attach(this); }); $('.rounded').each(function() { PIE.attach(this); }); $('.circles .circle').each(function() { PIE.attach(this); });}});</script>
+<![endif]-->
+
+  <script type="text/javascript">
+    // get data from nunjucks
+    var data = {{ courses | dump | safe }};
+
+    // get chosen job from localStorage
+    var index = JSON.parse(localStorage.getItem('course'));
+
+    let college = document.getElementById('college');
+    let titles = document.getElementsByClassName('title');
+    let distance = document.getElementById('distance');
+
+    Array.from(titles).map(title => {
+      title.innerText = data[index].name
+    })
+  </script>
+{% include "includes/scripts.html" %}
+</body>
+
+</html>
+{% include "includes/scripts.html" %}

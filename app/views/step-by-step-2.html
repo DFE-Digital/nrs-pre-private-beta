@@ -1,0 +1,228 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Step by step navigation
+{% endblock %}
+
+{% block pageScripts %}
+<script src="/public/javascripts/step-by-step-navigation.js"></script>
+<script type="text/javascript">
+  var $element = $('#step-by-step-navigation')
+  var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
+  stepByStepNavigation.start($element)
+</script>
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      Home
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">
+      Retrain to be <span id="anora">a</span> <span style="text-transform:lowercase;" class="title">healthcare assistant</span>: step by step
+    </h1>
+    <p>
+      You will need to complete a <span style="text-transform:lowercase;" class="title">healthcare assistant</span> course and a communications course.
+    </p>
+
+    <div id="step-by-step-navigation" class="app-step-nav app-step-nav--large app-step-nav--active" data-show-text="Show" data-hide-text="Hide" data-show-all-text="Show all" data-hide-all-text="Hide all">
+      <ol id="list" class="app-step-nav__steps">
+        <li class="app-step-nav__step js-step" id="check-youre-allowed-to-drive" style="filter: greyscale(1); opacity:0.5;">
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 1
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Check your skills and experience
+              </span>
+              <span style="color:grey; font-weight: 200; font-size:0.8em;"> &mdash; Completed</span>
+
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-check-youre-allowed-to-drive-1">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Warning</span>
+                You have already completed this step
+              </strong>
+            </div>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="driving-lessons-and-practice">
+          <div class="app-step-nav__header js-toggle-panel" data-position="3">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 2
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+Complete a communications course
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-driving-lessons-and-practice-3">
+            <ol class="app-step-nav__list " data-length="4">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="5.4" class="app-step-nav__link js-link" href="./communication">Find a course </a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="driving-lessons-and-practice">
+          <div class="app-step-nav__header js-toggle-panel" data-position="3">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--logic">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    and
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Complete a <span style="text-transform: lowercase;" class="title">healthcare assistant</span> course
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-driving-lessons-and-practice-3">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Warning</span>
+                Complete a communications course first
+              </strong>
+            </div>
+          </div>
+
+        </li>
+
+
+
+
+        <li class="app-step-nav__step js-step" id="book-and-manage-your-theory-test" style="filter: greyscale(1); opacity:0.5;">
+          <div class="app-step-nav__header js-toggle-panel" data-position="4">
+            <h2 class="app-step-nav__title">
+              <span id="circle" class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 3
+                  </span>
+                </span>
+              </span>
+              <span class="js-step-title">
+                Find a job
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-book-and-manage-your-driving-test-6">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Warning</span>
+                You need to study communication level 3 before you can apply for <span style="text-transform:lowercase;" class="title"></span> jobs
+              </strong>
+            </div>
+          </div>
+        </li>
+
+
+
+
+      </ol>
+    </div>
+
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4"></div>
+    <h2 class="govuk-heading-m">Save your progress</h2>
+    <ul class="govuk-list">
+      <li>
+        <p>
+          <a href="./vignette-save">Save your progress</a>
+        </p>
+      </li>
+    </ul>
+    <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-top-9 govuk-!-margin-bottom-4">
+
+    </div>
+    <h2 class="govuk-heading-m">Get more advice and guidance</h2>
+    <ul class="govuk-list">
+      <li>
+        <p>
+          <a href="./vignette-career">Speak to a careers adviser</a>
+        </p>
+      </li>
+    </ul>
+
+  </div>
+</div>
+<style media="screen">
+  .app-step-nav__toggle-link, .app-step-nav__button--controls{
+    display:none;
+  }
+</style>
+<script type="text/javascript">
+  // get data from nunjucks
+  var data = {{ data | dump | safe }};
+
+  // get chosen job from localStorage
+  var index = JSON.parse(localStorage.getItem('user'));
+
+  var title = document.getElementsByClassName('title');
+
+  var anora = document.getElementById('anora');
+  anora.innerText = data[index].anora
+
+  if (data[index].app != true) {
+    var apprenticeship = document.getElementById('apprenticeship');
+    var circle = document.getElementById('circle');
+    var count = document.getElementById('count');
+
+    apprenticeship.parentNode.removeChild(apprenticeship);
+    circle.classList.remove('app-step-nav__circle--logic');
+    circle.classList.add('app-step-nav__circle--number');
+    count.innerText = 3
+
+  }
+
+  Array.from(title).map(title => {
+    title.innerText = data[index].name
+  })
+
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var buttons = document.getElementsByClassName('app-step-nav__button');
+    eventFire(buttons[2], 'click');
+  }, false);
+</script>
+{% endblock %}

@@ -1,0 +1,28 @@
+{
+  "courses": [
+    {
+      "name": "Functional communications for work",
+      "description": "This course considers key communication areas in depth to help you become more confident in the workplace as well as more effective.",
+      "college":"Your City College",
+      "level": "Communications level 3",
+      "price": "£50 to £250",
+      "distance": "1.9 miles"
+    },
+    {
+      "name": "Improve your communication skills",
+      "description": "This communication skills training will not only teach you about communicating and overcoming barriers, but also how to ask questions, to listen and even the importance of body language.",
+      "college":"Your City College",
+      "level": "Communications level 3",
+      "price": "£50 to £250",
+      "distance": "1.4 miles"
+    },
+    {
+      "name": "Effective communications",
+      "description": "This will help you present clear, positive messages in the workplace. Both appropriate for corporate communication training as well for use in personal situations.",
+      "college":"Your City College",
+      "level": "Communications level 3",
+      "price": "£50 to £250",
+      "distance": "5.9 miles"
+    }
+  ]
+}

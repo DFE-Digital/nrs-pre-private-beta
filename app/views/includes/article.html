@@ -1,0 +1,19 @@
+<div>
+  <article class="article">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-m deliverytitle">{# content in jobs.json. Scripted in routes.html #}</h1>
+        <p class="deliveryDescription">{# content in jobs.json. Scripted in routes.html #}</p>
+        <p><a href="#">See more information</a></p>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <ul class="govuk-list">
+        <li class="deliveryduration">{# content in jobs.json. Scripted in routes.html #}</li>
+        <li class="deliverycost">{# content in jobs.json. Scripted in routes.html #}</li>
+        </ul>
+        <a onclick="save({{loop.index}})" class="govuk-button" href="./course">Choose this option</a>
+      </div>
+    </div>
+  </article>
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+</div>

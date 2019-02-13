@@ -1,0 +1,119 @@
+{% extends "layout.html" %} {% block pageTitle %} GOV.UK Prototype Kit {%
+endblock %} {% block content %}
+<main id="main" class="govuk-main-wrapper" role="main">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <a href="../course-results" class="govuk-back-link">Back to results</a>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 id="title" class="govuk-heading-xl govuk-!-margin-bottom-3 govuk-!-margin-top-6">
+        {{- courses[0].name | safe }}
+      </h1>
+      <span class="govuk-caption-xl govuk-!-margin-bottom-9">
+        {{- courses[0].description | safe }}
+      </span>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <table class="govuk-table">
+
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Qualification</th>
+                <td class="govuk-table__cell">{{- courses[0].level | safe }}</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Taught by</th>
+                <td class="govuk-table__cell">
+                  <span id="college">{{- courses[0].college | safe }}</span><br>
+                  (<span id="distance">{{- courses[0].distance | safe }}</span> from your location)
+                </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Course types</th>
+                <td class="govuk-table__cell">
+                  <ul class="govuk-list">
+                    <li>Online in your own time</li>
+                    <li>Part-time (online and some classroom)</li>
+                    <li>Full-time  (mostly classroom)</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Course cost</th>
+                <td class="govuk-table__cell">
+                  <ul class="govuk-list">
+                    <li>Online: £50</li>
+                    <li>Part-time: £100</li>
+                    <li>Full-time: £250</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Course start date</th>
+                <td class="govuk-table__cell">
+                  Depending on course type
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-third govuk-!-margin-bottom-9">
+
+          <h3 class="govuk-heading-m">Apply for this course</h3>
+          <div style="margin-bottom:0;" class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <p class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+This course requires you to apply through the college's website.
+</p>
+</div>
+          <a role="button" draggable="false" class="govuk-button govuk-!-margin-bottom-4" href="./provider">Apply through the college</a>
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+          <h2 class="govuk-heading-m">Get more advice and guidance</h2>
+          <ul class="govuk-list">
+            <li>
+              <p>
+                <a href="./vignette-career">Speak to a careers adviser</a>
+              </p>
+            </li>
+          </ul>
+
+
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <a href="../course-results" class="govuk-back-link">Back to results</a>
+    </div>
+  </div>
+</main>
+<script type="text/javascript">
+
+
+    // get data from nunjucks
+    var data = {{ courses | dump | safe }};
+
+    // get chosen job from localStorage
+    var index = JSON.parse(localStorage.getItem('course'));
+
+  let college = document.getElementById('college');
+  let title = document.getElementById('title');
+  let distance = document.getElementById('distance');
+
+  title.innerText = data[index].name
+  distance.innerText = data[index].distance
+  college.innerText = data[index].college
+
+
+</script>
+{% endblock %}
