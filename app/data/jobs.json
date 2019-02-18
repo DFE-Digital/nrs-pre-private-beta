@@ -1,6 +1,5 @@
 {
-  "data": [
-    {
+  "data": [{
       "name": "Healthcare assistant",
       "anora": "a",
       "description": "Provide high-quality and compassionate health and social care for a wide range of people",
@@ -46,75 +45,31 @@
         "attending meetings with other healthcare professionals"
       ]
     },
+
     {
-      "name": "Plumber",
+      "name": "Youth worker",
       "anora": "a",
-      "description": "Fit and service hot and cold water systems, heating systems and drainage networks",
-      "jobCount": 300,
-      "jobLink": "https://findajob.dwp.gov.uk/search?loc=86397&q=plumber",
-      "app": true,
-      "salary": "25,000",
-      "traineeSalary": "10,000",
-      "hours": "35-40",
-      "lifestyle": "Monday to friday",
-      "trainingor": "Based on the results from the understand yourself questions, you need to do:",
-      "youllneed": ["good english and maths", "social and communication skills", "technical plumbing skills"],
-      "waytotrain1": "a number of skills courses before you start the job",
-      "andor": "and",
-      "waytotrain2": "a level 3 apprenticeship in plumbing and domestic heating, learning while you work",
-      "courses": ["communication level 3", "english level 2", "maths level 2"],
-      "coursedetail": "This could take 4 months to complete part-time. It would be fully funded by the government",
-      "coulddothis": "You also need to do a level 3 apprenticeship in plumbing and domestic heating. You would:",
-      "coulddothisdetails": [
-        "be working as a trainee in an organisation while learning the technical skills",
-        "have a reduced salary while you work",
-        "can take up to 4 years"
-      ],
-      "whatyoulllearn": [
-        "the ability to use, repair and maintain machines and tools",
-        "knowledge of building and construction",
-        "to be thorough and pay attention to detail",
-        "knowledge of maths",
-        "to work well with others",
-        "to use your initiative",
-        "to work well with your hands"
-      ],
-      "whatyoulldo": [
-        "measuring and planning to give cost and time estimates",
-        "cutting, bending and joining pipes and fittings",
-        "installing water, drainage and heating systems",
-        "finding and fixing faults",
-        "servicing gas and oil-fired central heating systems and radiators",
-        "installing and fixing domestic appliances like showers and washing machines",
-        "dealing with emergency call-outs like boiler breakdowns or blocked drains",
-        "fitting weather-proof materials, joints and flashings to roofs, chimneys and walls"
-      ]
-    },
-    {
-      "name": "Office administrator",
-      "anora": "an",
       "description": "Give support to offices by organising meetings, typing documents and updating computer records",
-      "jobCount": 210,
+      "jobCount": 140,
       "jobLink": "https://findajob.dwp.gov.uk/search?loc=86397&q=plumber",
       "app": true,
-      "salary": "22,000",
+      "salary": "21,000",
       "traineeSalary": "10,000",
       "hours": "35-40",
-      "lifestyle": "Monday to friday",
+      "lifestyle": "evenings / weekends",
       "trainingor": "Based on the results from the understand yourself questions, you need to do:",
-      "youllneed": ["good english and maths", "social and communication skills", "IT skills"],
+      "youllneed": ["good english and maths", "social and communication skills", "youth and community skills"],
       "waytotrain1": "a number of skills courses before you start the job",
       "andor": "and",
       "waytotrain2": "a level 3 apprenticeship, learning while you work",
-      "courses": ["communication level 3", "english level 2", "maths level 2", "a business administration college course"],
+      "courses": ["communication level 3", "english level 2", "maths level 2"],
       "coursedetail": "This could take 4 months to complete part-time. It would be partly funded by the government and would cost you between £50 and £250.",
-      "coulddothis": "You could enroll in a level 3 business administrator apprenticeship. You would:",
+      "coulddothis": "You could enroll in a level 3 youth work apprenticeship. You would:",
       "coulddothisdetails": [
-        "work as a trainee in a business while learning the technical skills",
+        "work as a trainee in an organisation while learning the technical skills",
         "can take around 18 months"
       ],
       "whatyoulllearn": [
-        "administration skills",
         "to be thorough and pay attention to detail",
         "the ability to work well with others",
         "the ability to work on your own",
@@ -124,14 +79,56 @@
         "customer service skills"
       ],
       "whatyoulldo": [
-        "dealing with queries on the phone, by email and social media",
-        "greeting visitors at reception",
-        "typing letters and reports",
-        "updating computer records",
-        "printing and photocopying",
-        "ordering supplies",
-        "setting up meetings and taking notes during them",
-        "making travel arrangements for staff"
+        "organising sports, arts, education and drama activities",
+        "counselling, coaching and mentoring",
+        "working with young carers or those at risk of offending",
+        "assessing needs and running projects that deal with issues like health, bullying, crime or drugs",
+        "managing volunteers and part-time workers",
+        "keeping confidential records",
+        "controlling budgets and applying for grants and funding",
+        "working with social workers, teachers, probation officers and the police"
+      ]
+    },
+    {
+      "name": "Animal care worker",
+      "anora": "an",
+      "description": "Looking after animals in places like kennels, rescue centres or sanctuaries.",
+      "jobCount": 68,
+      "jobLink": "https://findajob.dwp.gov.uk/search?loc=86397&q=plumber",
+      "app": true,
+      "salary": "14,000",
+      "traineeSalary": "8,000",
+      "hours": "38-40",
+      "lifestyle": "evenings / weekends / bank holidays",
+      "trainingor": "Based on the results from the understand yourself questions, you need to do:",
+      "youllneed": ["good english and maths", "social and communication skills", "animal care skills"],
+      "waytotrain1": "a number of skills courses before you start the job",
+      "andor": "and",
+      "waytotrain2": "a level 3 apprenticeship, learning while you work",
+      "courses": ["communication level 3", "english level 2", "maths level 2", "an animal care college course"],
+      "coursedetail": "This could take 4 months to complete part-time. It would be partly funded by the government and would cost you between £50 and £250.",
+      "coulddothis": "You could enroll in a level 3 animal care and welfare apprenticeship. You would:",
+      "coulddothisdetails": [
+        "work as a trainee in an organisation while learning the technical skills",
+        "can take around 18 months"
+      ],
+      "whatyoulllearn": [
+        "animal care skills",
+        "to be thorough and pay attention to detail",
+        "the ability to work well with others",
+        "the ability to work on your own",
+        "sensitivity and understanding",
+        "to be flexible and open to change",
+        "excellent verbal communication skills",
+        "customer service skills"
+      ],
+      "whatyoulldo": [
+        "preparing food and feeding, cleaning and grooming the animals",
+        "exercising dogs in a yard or taking them for walks",
+        "cleaning out kennels, pens and cages, and changing bedding",
+        "looking after animals who become ill or distressed",
+        "answering queries from colleagues and visitors",
+        "ensuring that animal enclosures are maintained"
       ]
     },
     {
@@ -264,88 +261,47 @@
       ]
     },
     {
-      "name": "Youth worker",
+      "name": "Plumber",
       "anora": "a",
-      "description": "Give support to offices by organising meetings, typing documents and updating computer records",
-      "jobCount": 140,
+      "description": "Fit and service hot and cold water systems, heating systems and drainage networks",
+      "jobCount": 300,
       "jobLink": "https://findajob.dwp.gov.uk/search?loc=86397&q=plumber",
       "app": true,
-      "salary": "21,000",
+      "salary": "25,000",
       "traineeSalary": "10,000",
       "hours": "35-40",
-      "lifestyle": "evenings / weekends",
+      "lifestyle": "Monday to friday",
       "trainingor": "Based on the results from the understand yourself questions, you need to do:",
-      "youllneed": ["good english and maths", "social and communication skills", "youth and community skills"],
+      "youllneed": ["good english and maths", "social and communication skills", "technical plumbing skills"],
       "waytotrain1": "a number of skills courses before you start the job",
       "andor": "and",
-      "waytotrain2": "a level 3 apprenticeship, learning while you work",
+      "waytotrain2": "a level 3 apprenticeship in plumbing and domestic heating, learning while you work",
       "courses": ["communication level 3", "english level 2", "maths level 2"],
-      "coursedetail": "This could take 4 months to complete part-time. It would be partly funded by the government and would cost you between £50 and £250.",
-      "coulddothis": "You could enroll in a level 3 youth work apprenticeship. You would:",
+      "coursedetail": "This could take 4 months to complete part-time. It would be fully funded by the government",
+      "coulddothis": "You also need to do a level 3 apprenticeship in plumbing and domestic heating. You would:",
       "coulddothisdetails": [
-        "work as a trainee in an organisation while learning the technical skills",
-        "can take around 18 months"
+        "be working as a trainee in an organisation while learning the technical skills",
+        "have a reduced salary while you work",
+        "can take up to 4 years"
       ],
       "whatyoulllearn": [
+        "the ability to use, repair and maintain machines and tools",
+        "knowledge of building and construction",
         "to be thorough and pay attention to detail",
-        "the ability to work well with others",
-        "the ability to work on your own",
-        "sensitivity and understanding",
-        "to be flexible and open to change",
-        "excellent verbal communication skills",
-        "customer service skills"
+        "knowledge of maths",
+        "to work well with others",
+        "to use your initiative",
+        "to work well with your hands"
       ],
       "whatyoulldo": [
-      "organising sports, arts, education and drama activities",
-      "counselling, coaching and mentoring",
-      "working with young carers or those at risk of offending",
-      "assessing needs and running projects that deal with issues like health, bullying, crime or drugs",
-      "managing volunteers and part-time workers",
-      "keeping confidential records",
-      "controlling budgets and applying for grants and funding",
-      "working with social workers, teachers, probation officers and the police"
-      ]
-    },
-    {
-      "name": "Animal care worker",
-      "anora": "an",
-      "description": "Looking after animals in places like kennels, rescue centres or sanctuaries.",
-      "jobCount": 68,
-      "jobLink": "https://findajob.dwp.gov.uk/search?loc=86397&q=plumber",
-      "app": true,
-      "salary": "14,000",
-      "traineeSalary": "8,000",
-      "hours": "38-40",
-      "lifestyle": "evenings / weekends / bank holidays",
-      "trainingor": "Based on the results from the understand yourself questions, you need to do:",
-      "youllneed": ["good english and maths", "social and communication skills", "animal care skills"],
-      "waytotrain1": "a number of skills courses before you start the job",
-      "andor": "and",
-      "waytotrain2": "a level 3 apprenticeship, learning while you work",
-      "courses": ["communication level 3", "english level 2", "maths level 2", "an animal care college course"],
-      "coursedetail": "This could take 4 months to complete part-time. It would be partly funded by the government and would cost you between £50 and £250.",
-      "coulddothis": "You could enroll in a level 3 animal care and welfare apprenticeship. You would:",
-      "coulddothisdetails": [
-        "work as a trainee in an organisation while learning the technical skills",
-        "can take around 18 months"
-      ],
-      "whatyoulllearn": [
-        "animal care skills",
-        "to be thorough and pay attention to detail",
-        "the ability to work well with others",
-        "the ability to work on your own",
-        "sensitivity and understanding",
-        "to be flexible and open to change",
-        "excellent verbal communication skills",
-        "customer service skills"
-      ],
-      "whatyoulldo": [
-        "preparing food and feeding, cleaning and grooming the animals",
-        "exercising dogs in a yard or taking them for walks",
-        "cleaning out kennels, pens and cages, and changing bedding",
-        "looking after animals who become ill or distressed",
-        "answering queries from colleagues and visitors",
-        "ensuring that animal enclosures are maintained"
+        "measuring and planning to give cost and time estimates",
+        "cutting, bending and joining pipes and fittings",
+        "installing water, drainage and heating systems",
+        "finding and fixing faults",
+        "servicing gas and oil-fired central heating systems and radiators",
+        "installing and fixing domestic appliances like showers and washing machines",
+        "dealing with emergency call-outs like boiler breakdowns or blocked drains",
+        "fitting weather-proof materials, joints and flashings to roofs, chimneys and walls"
       ]
     },
     {
@@ -393,6 +349,50 @@
       ]
     },
     {
+      "name": "Office administrator",
+      "anora": "an",
+      "description": "Give support to offices by organising meetings, typing documents and updating computer records",
+      "jobCount": 210,
+      "jobLink": "https://findajob.dwp.gov.uk/search?loc=86397&q=plumber",
+      "app": true,
+      "salary": "22,000",
+      "traineeSalary": "10,000",
+      "hours": "35-40",
+      "lifestyle": "Monday to friday",
+      "trainingor": "Based on the results from the understand yourself questions, you need to do:",
+      "youllneed": ["good english and maths", "social and communication skills", "IT skills"],
+      "waytotrain1": "a number of skills courses before you start the job",
+      "andor": "and",
+      "waytotrain2": "a level 3 apprenticeship, learning while you work",
+      "courses": ["communication level 3", "english level 2", "maths level 2", "a business administration college course"],
+      "coursedetail": "This could take 4 months to complete part-time. It would be partly funded by the government and would cost you between £50 and £250.",
+      "coulddothis": "You could enroll in a level 3 business administrator apprenticeship. You would:",
+      "coulddothisdetails": [
+        "work as a trainee in a business while learning the technical skills",
+        "can take around 18 months"
+      ],
+      "whatyoulllearn": [
+        "administration skills",
+        "to be thorough and pay attention to detail",
+        "the ability to work well with others",
+        "the ability to work on your own",
+        "sensitivity and understanding",
+        "to be flexible and open to change",
+        "excellent verbal communication skills",
+        "customer service skills"
+      ],
+      "whatyoulldo": [
+        "dealing with queries on the phone, by email and social media",
+        "greeting visitors at reception",
+        "typing letters and reports",
+        "updating computer records",
+        "printing and photocopying",
+        "ordering supplies",
+        "setting up meetings and taking notes during them",
+        "making travel arrangements for staff"
+      ]
+    },
+    {
       "name": "Sales manager",
       "anora": "an",
       "description": "Organise and run promotional, business and social events",
@@ -435,5 +435,6 @@
         "reporting back to senior managers",
         "keeping up to date with products and competitors"
       ]
-      }
-      ]}
+    }
+  ]
+}
